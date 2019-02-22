@@ -1,7 +1,22 @@
 
+spring: 
+  profiles: 
+    active:
+      - dev
+---
 
+spring:
+  profiles: dev
+    application:
+      name: SpringCloudConfigDemo-dev
 
-server.port=7700
+---
+
+spring:
+  profiles: test
+    application:
+      name: SpringCloudConfigDemo-test
+
 
 
 
