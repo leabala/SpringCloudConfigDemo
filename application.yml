@@ -4,14 +4,16 @@ spring:
     active:
     - dev
 ---
-
+server:
+  port: 7201
 spring:
   profiles: dev
   application:
     name: SpringCloudConfigDemo-dev
 
 ---
-
+server:
+  port: 7202
 spring:
   profiles: test
   application:
